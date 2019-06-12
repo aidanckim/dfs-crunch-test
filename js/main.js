@@ -3,7 +3,8 @@ $('.center').slick({
   centerPadding: '75px',
   slidesToShow: 1,
   arrows: false,
-  dots: true
+  dots: true,
+  infinite: false
   // responsive: [
   //   {
   //     breakpoint: 768,
