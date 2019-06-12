@@ -1,0 +1,305 @@
+/**************
+FONTS
+***************/
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(fonts/BebasNeueRegular.ttf) format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/**************
+COLORS
+***************/
+/**************
+GENERAL
+***************/
+.main-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/**************
+SLICK STYLES
+***************/
+.slick-dots li button:before {
+  font-size: 16px;
+  color: #564ce9;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #564ce9;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+
+/**************
+NAVIGATION
+***************/
+@media (max-width: 1024px) {
+  .desktop {
+    visibility: hidden;
+  }
+}
+
+.nav-flex {
+  display: flex;
+  list-style-type: none;
+}
+.nav-flex li:first-child {
+  margin-right: auto;
+}
+.nav-flex li:last-child {
+  padding-top: 1px;
+}
+.nav-flex a {
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+/**************
+INTRODUCTION
+***************/
+.company h1 {
+  color: #564ce9;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.company img {
+  margin-top: 42px;
+}
+
+.catch {
+  color: #564ce9;
+  margin-top: 38px;
+}
+.catch h1 {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 85%;
+}
+
+/**************
+SPORTS
+***************/
+.sports {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+.sports h2 {
+  color: #564ce9;
+  font-family: "Bebas Neue";
+  font-size: 24px;
+}
+
+.sports-flex {
+  margin-top: 34px;
+  margin-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.one {
+  padding-top: 5px;
+}
+
+.three {
+  padding-bottom: 5px;
+}
+
+/**************
+CARDS
+***************/
+.cards {
+  background-color: #564ce9;
+  border-radius: 8px;
+  color: white;
+  margin: 0 auto;
+  /**************
+  REVIEW code below
+  ***************/
+  max-width: 95%;
+}
+.cards h2 {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 17px;
+  text-transform: uppercase;
+}
+.cards .fd-logo {
+  padding-top: 25px;
+}
+.cards p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  padding-top: 43px;
+  padding-right: 26.5px;
+  padding-left: 26.5px;
+}
+.cards img {
+  margin: 0 auto;
+}
+.cards .price {
+  padding-top: 19px;
+  padding-bottom: 37px;
+}
+.cards ul {
+  padding: 0;
+}
+.cards li {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 2;
+}
+.cards .button {
+  background-color: #2b248e;
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  font-family: "Bebas Neue";
+  margin-bottom: 25px;
+  padding-right: 85px;
+  padding-left: 85px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cards h3 {
+  font-size: 21px;
+}
+
+/**************
+DATA
+***************/
+.data h1 {
+  color: #564ce9;
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  margin-top: 148px;
+}
+
+.graph img {
+  width: 75%;
+}
+.graph p {
+  font-family: "Montserrat";
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-top: 46px;
+  text-align: left;
+  width: 85%;
+}
+
+.percentage img {
+  margin-top: 75px;
+  width: 70%;
+}
+.percentage p {
+  font-family: "Montserrat";
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-top: 41px;
+  text-align: left;
+  width: 85%;
+}
+
+/**************
+FOOTER
+***************/
+.sms {
+  padding-left: 30px;
+  text-align: left;
+}
+.sms h2 {
+  color: #909090;
+  font-family: "Bebas Neue";
+  font-weight: 300;
+  margin-top: 75px;
+  text-transform: uppercase;
+}
+.sms a {
+  text-decoration: none;
+}
+.sms .discord {
+  margin-left: 5px;
+}
+
+.disc {
+  padding-left: 30px;
+  text-align: left;
+}
+.disc h2 {
+  color: #909090;
+  font-family: "Bebas Neue";
+  font-weight: 300;
+  margin-top: 75px;
+  text-transform: uppercase;
+}
+.disc p {
+  color: #909090;
+  font-family: "Montserrat";
+  line-height: 1.5;
+  width: 85%;
+}
+
+.acc {
+  padding-left: 30px;
+  text-align: left;
+}
+.acc h2 {
+  color: #909090;
+  font-family: "Bebas Neue";
+  font-weight: 300;
+  margin-top: 75px;
+  text-transform: uppercase;
+}
+.acc ul {
+  padding: 0;
+}
+.acc li {
+  line-height: 1.5;
+  list-style-type: none;
+}
+.acc a {
+  color: #564ce9;
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.copy p {
+  color: #909090;
+  font-family: "Montserrat";
+  font-size: 12px;
+  margin-top: 50px;
+  margin-bottom: 51px;
+}
+
+.footer-flex {
+  flex: 1;
+}
+
+.bigger {
+  flex: 2;
+}
+
+/**************
+MEDIA QUERIES
+***************/
+@media (min-width: 768px) {
+  body {
+    background-color: black;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

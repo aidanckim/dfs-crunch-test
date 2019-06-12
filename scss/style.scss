@@ -1,0 +1,358 @@
+/**************
+FONTS
+***************/
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url(fonts/BebasNeueRegular.ttf) format('ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-bn: 'Bebas Neue';
+$font-family-m: 'Montserrat';
+
+/**************
+COLORS
+***************/
+
+$color-main: #564ce9;
+
+
+/**************
+GENERAL
+***************/
+
+.main-container {
+  margin: 0 auto;
+  text-align: center;
+  // width: 90%;
+}
+
+/**************
+SLICK STYLES
+***************/
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: $color-main;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $color-main;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+
+
+/**************
+NAVIGATION
+***************/
+
+// hide logo in mobile and tablet
+.desktop {
+  @media (max-width: 1024px) {
+    visibility: hidden;
+  }
+}
+
+.nav-flex {
+  display: flex;
+  list-style-type: none;
+  li:first-child {
+    margin-right: auto;
+  }
+  // manually push down to align with login icon
+  li:last-child {
+    padding-top: 1px;
+  }
+  a {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 25px;
+  	text-decoration: none;
+  }
+}
+
+/**************
+INTRODUCTION
+***************/
+
+.company {
+  h1 {
+    color: $color-main;
+    font-family: $font-family-bn;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  img {
+    margin-top: 42px;
+  }
+}
+
+.catch {
+  color: $color-main;
+  margin-top: 38px;
+  h1 {
+    font-family: $font-family-bn;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85%;
+  }
+}
+
+/**************
+SPORTS
+***************/
+
+.sports {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  h2 {
+    color: $color-main;
+    font-family: $font-family-bn;
+    font-size: 24px;
+  }
+}
+
+.sports-flex {
+  margin-top: 34px;
+  margin-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.one {
+  // manually push down to align with sports icon
+  padding-top: 5px;
+}
+
+.three {
+  // manually push up to align with sports icon
+  padding-bottom: 5px;
+}
+
+/**************
+CARDS
+***************/
+
+.cards {
+  background-color: $color-main;
+  border-radius: 8px;
+  color: white;
+  margin: 0 auto;
+  /**************
+  REVIEW code below
+  ***************/
+  max-width: 95%;
+  // width: 400px; //manually edited - width: 85%;
+  h2 {
+    font-family: $font-family-bn;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 17px;
+    text-transform: uppercase;
+  }
+  .fd-logo {
+    padding-top: 25px;
+  }
+  p {
+    font-family: $font-family-m;
+    font-size: 14px;
+    padding-top: 43px;
+    padding-right: 26.5px;
+    padding-left: 26.5px;
+  }
+  img {
+    margin: 0 auto;
+  }
+  .price {
+    padding-top: 19px;
+    padding-bottom: 37px;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    font-family: $font-family-m;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .button {
+    background-color: #2b248e;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    font-family: $font-family-bn;
+    margin-bottom: 25px;
+    padding-right: 85px;
+    padding-left: 85px;
+    text-decoration: none;
+    text-transform: uppercase;
+    // figure out new button
+  }
+  h3 {
+    font-size: 21px;
+    // manually edited from 24px to 21px
+  }
+  // /**************
+  // REVIEW code below
+  // ***************/
+  // @media (min-width: 700px) {
+  //   max-width: 60%;
+  // }
+}
+
+/**************
+DATA
+***************/
+
+.data {
+  h1 {
+    color: $color-main;
+    font-family: $font-family-bn;
+    font-size: 50px;
+    // added an extra 25px because of dots -25px
+    margin-top: 148px;
+  }
+}
+
+.graph {
+  img {
+    width: 75%;
+  }
+  p {
+    font-family: $font-family-m;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 46px;
+    text-align: left;
+    width: 85%;
+  }
+}
+
+.percentage {
+  img {
+    margin-top: 75px;
+    width: 70%;
+  }
+  p {
+    font-family: $font-family-m;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 41px;
+    text-align: left;
+    width: 85%;
+  }
+}
+
+/**************
+FOOTER
+***************/
+
+.sms {
+  padding-left: 30px;
+  text-align: left;
+  h2 {
+    color: #909090;
+    font-family: $font-family-bn;
+    font-weight: 300;
+    margin-top: 75px;
+    text-transform: uppercase;
+  }
+  a {
+    text-decoration: none;
+  }
+  .discord {
+    margin-left: 5px;
+  }
+}
+
+.disc {
+  padding-left: 30px;
+  text-align: left;
+  h2 {
+    color: #909090;
+    font-family: $font-family-bn;
+    font-weight: 300;
+    margin-top: 75px;
+    text-transform: uppercase;
+  }
+  p {
+    color: #909090;
+    font-family: $font-family-m;
+    line-height: 1.5;
+    width: 85%;
+  }
+}
+
+.acc {
+  padding-left: 30px;
+  text-align: left;
+  h2 {
+    color: #909090;
+    font-family: $font-family-bn;
+    font-weight: 300;
+    margin-top: 75px;
+    text-transform: uppercase;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    line-height: 1.5;
+    list-style-type: none;
+  }
+  a {
+    color: $color-main;
+    font-size: 14px;
+    font-family: $font-family-m;
+    text-decoration: none;
+  }
+}
+
+.copy {
+  p {
+    color: #909090;
+    font-family: $font-family-m;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 51px;
+  }
+}
+
+// .footer {
+//   // @media (min-width: 768px) {
+//   //   display: flex;
+//   //   justify-content: space-between;
+//   //   margin: 0 auto;
+//   //   padding-top: 91px;
+//   //   width: 90;
+//   // }
+// }
+
+.footer-flex {
+  flex: 1;
+}
+
+.bigger {
+  flex: 2;
+}
+
+
+
+/**************
+MEDIA QUERIES
+***************/
+
+@media (min-width: 768px) {
+  body {
+    background-color: black;
+  }
+}
