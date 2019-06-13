@@ -101,6 +101,9 @@ SPORTS
   font-family: "Bebas Neue";
   font-size: 24px;
 }
+.sports a {
+  text-decoration: none;
+}
 
 .sports-flex {
   margin-top: 34px;
@@ -128,7 +131,7 @@ CARDS
   /**************
   REVIEW code below
   ***************/
-  max-width: 95%;
+  max-width: 325px;
 }
 .cards h2 {
   font-family: "Bebas Neue";
@@ -297,6 +300,11 @@ FOOTER
 MEDIA QUERIES
 ***************/
 @media (min-width: 768px) {
+  body {
+    background-color: black;
+  }
+}
+@media (min-width: 1024px) {
   body {
     background-color: black;
   }

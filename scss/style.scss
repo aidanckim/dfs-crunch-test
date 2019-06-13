@@ -119,6 +119,9 @@ SPORTS
     font-family: $font-family-bn;
     font-size: 24px;
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 .sports-flex {
@@ -150,7 +153,7 @@ CARDS
   /**************
   REVIEW code below
   ***************/
-  max-width: 95%;
+  max-width: 325px;
   // width: 400px; //manually edited - width: 85%;
   h2 {
     font-family: $font-family-bn;
@@ -208,6 +211,7 @@ CARDS
   //   max-width: 60%;
   // }
 }
+
 
 /**************
 DATA
@@ -352,6 +356,12 @@ MEDIA QUERIES
 ***************/
 
 @media (min-width: 768px) {
+  body {
+    background-color: black;
+  }
+}
+
+@media (min-width: 1024px) {
   body {
     background-color: black;
   }
