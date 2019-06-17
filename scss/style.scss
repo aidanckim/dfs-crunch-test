@@ -22,6 +22,10 @@ $color-main: #564ce9;
 GENERAL
 ***************/
 
+* {
+  box-sizing: border-box;
+}
+
 .main-container {
   margin: 0 auto;
   text-align: center;
@@ -80,6 +84,9 @@ INTRODUCTION
 ***************/
 
 .company {
+  @media (min-width: 1024px) {
+    display: none;
+  }
   h1 {
     color: $color-main;
     font-family: $font-family-bn;
@@ -101,6 +108,10 @@ INTRODUCTION
     text-align: center;
     text-transform: uppercase;
     width: 85%;
+    @media (min-width: 1024px) {
+      font-size: 80px;
+      margin-top: 98px;
+    }
   }
 }
 
@@ -114,6 +125,9 @@ SPORTS
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
+  @media (min-width: 1024px) {
+    margin-top: 80px;
+  }
   h2 {
     color: $color-main;
     font-family: $font-family-bn;
@@ -229,7 +243,11 @@ DATA
 
 .graph {
   img {
-    width: 75%;
+    margin-top: 31px;
+    @media (min-width: 768px) {
+      width: 550px;
+      height: 350px;
+    }
   }
   p {
     font-family: $font-family-m;
@@ -238,13 +256,19 @@ DATA
     padding-top: 46px;
     text-align: left;
     width: 85%;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 }
 
 .percentage {
   img {
     margin-top: 75px;
-    width: 70%;
+    @media (min-width: 768px) {
+      width: 384px;
+      height: 384px;
+    }
   }
   p {
     font-family: $font-family-m;
@@ -253,6 +277,9 @@ DATA
     padding-top: 41px;
     text-align: left;
     width: 85%;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -331,15 +358,16 @@ FOOTER
   }
 }
 
-// .footer {
-//   // @media (min-width: 768px) {
-//   //   display: flex;
-//   //   justify-content: space-between;
-//   //   margin: 0 auto;
-//   //   padding-top: 91px;
-//   //   width: 90;
-//   // }
-// }
+.footer {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 91px;
+    padding-right: 5px;
+    max-width: 90%;
+  }
+}
 
 .footer-flex {
   flex: 1;
@@ -351,18 +379,54 @@ FOOTER
 
 
 
+
 /**************
 MEDIA QUERIES
 ***************/
 
 @media (min-width: 768px) {
-  body {
-    background-color: black;
-  }
+
 }
 
 @media (min-width: 1024px) {
-  body {
-    background-color: black;
-  }
+  .flex {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1024px;
+}
+// .cards {
+//   padding: 10px;
+//   margin: 10px;
+//   text-align: center;
+// }
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+.flex-container > div {
+  width: 50%;
+  padding: 10px;
+}
+.flexbox-container > div:first-child {
+  margin-right: 20px;
+}
+.graph img {
+  width: 100%;
+  max-width: 477px;
+  max-height: 292px;
+}
+.graph p {
+  margin-left: 30px;
+}
+.percentage img {
+  width: 100%;
+  max-width: 470px;
+  max-height: 470px;
+  order: 1;
+}
+.percentage p {
+  margin-right: 37px;
+}
 }
