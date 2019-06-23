@@ -133,11 +133,11 @@ SPORTS
 }
 
 .one {
-  padding-top: 5px;
+  padding-top: 2.5px;
 }
 
 .three {
-  padding-bottom: 5px;
+  padding-bottom: 2.5px;
 }
 
 /**************
@@ -213,6 +213,8 @@ DATA
 
 .graph img {
   margin-top: 31px;
+  padding-left: 42px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .graph img {
@@ -236,6 +238,7 @@ DATA
 
 .percentage img {
   margin-top: 75px;
+  width: 75%;
 }
 @media (min-width: 768px) {
   .percentage img {

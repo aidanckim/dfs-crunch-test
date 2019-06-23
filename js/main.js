@@ -39,3 +39,48 @@ $('.three').click(function(e) {
   $('.nba').hide();
   e.preventDefault();
 });
+
+
+// SPORTS ICON HOVER
+
+$(function() {
+  $("#football").on({
+    mouseenter: function() {
+      $(this).attr('src', 'img/football-hover.png');
+    },
+    mouseleave: function(){
+      $(this).attr('src', 'img/football.png');
+    }
+  });
+});
+
+$(function() {
+  $("#basketball").on({
+    mouseenter: function() {
+      $(this).attr('src', 'img/basketball-hover.png');
+    },
+    mouseleave: function(){
+      $(this).attr('src', 'img/basketball.png');
+    }
+  });
+});
+
+$(function() {
+  $("#baseball").on({
+    mouseenter: function() {
+      $(this).attr('src', 'img/baseball-hover.png');
+    },
+    mouseleave: function(){
+      $(this).attr('src', 'img/baseball.png');
+    }
+  });
+});
+
+
+
+function changeImage() {
+  var image = document.getElementById('football');
+  if (image.src.match("img/football.png")) {
+    image.src = "img/football-hover.png";
+  }
+}
