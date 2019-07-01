@@ -21,6 +21,15 @@ GENERAL
   margin: 0 auto;
   text-align: center;
 }
+@media (min-width: 1920px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
 
 /**************
 SLICK STYLES
@@ -147,11 +156,9 @@ CARDS
   background-color: #564ce9;
   border-radius: 8px;
   color: white;
-  margin: 0 auto;
   /**************
   REVIEW code below
   ***************/
-  max-width: 325px;
 }
 .cards h2 {
   font-family: "Bebas Neue";
@@ -201,6 +208,24 @@ CARDS
   font-size: 21px;
 }
 
+.cards {
+  max-width: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .cards {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    max-width: 325px;
+    margin: 0 auto;
+  }
+}
+
 /**************
 DATA
 ***************/
@@ -208,18 +233,33 @@ DATA
   color: #564ce9;
   font-family: "Bebas Neue";
   font-size: 50px;
+  text-transform: uppercase;
   margin-top: 148px;
 }
 
 .graph img {
   margin-top: 31px;
-  padding-left: 42px;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .graph img {
+    padding-left: 42px;
+  }
 }
 @media (min-width: 768px) {
   .graph img {
-    width: 550px;
-    height: 350px;
+    width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .graph img {
+    width: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  .graph img {
+    width: 477px;
+    height: 292px;
   }
 }
 .graph p {
@@ -235,15 +275,31 @@ DATA
     font-size: 20px;
   }
 }
+@media (min-width: 1024px) {
+  .graph p {
+    line-height: 1.75;
+  }
+}
 
 .percentage img {
   margin-top: 75px;
-  width: 75%;
+  width: 70%;
 }
 @media (min-width: 768px) {
   .percentage img {
-    width: 384px;
-    height: 384px;
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .percentage img {
+    order: 1;
+    width: 75%;
+  }
+}
+@media (min-width: 1920px) {
+  .percentage img {
+    width: 470px;
+    height: 470px;
   }
 }
 .percentage p {
@@ -257,6 +313,11 @@ DATA
 @media (min-width: 768px) {
   .percentage p {
     font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .percentage p {
+    line-height: 1.75;
   }
 }
 
@@ -377,21 +438,8 @@ MEDIA QUERIES
     margin-right: 20px;
   }
 
-  .graph img {
-    width: 100%;
-    max-width: 477px;
-    max-height: 292px;
-  }
-
   .graph p {
     margin-left: 30px;
-  }
-
-  .percentage img {
-    width: 100%;
-    max-width: 470px;
-    max-height: 470px;
-    order: 1;
   }
 
   .percentage p {

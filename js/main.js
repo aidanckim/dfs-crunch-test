@@ -1,11 +1,61 @@
 $('.center').slick({
-  centerMode: true,
-  centerPadding: '75px',
-  slidesToShow: 1,
-  arrows: false,
+  variableWidth: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  infinite: true,
   dots: true,
-  infinite: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '40px',
+        arrows: false,
+        dots: true,
+        infinite: false,
+        variableWidth: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
+
+
+// $('.center').slick({
+//   centerMode: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   centerPadding: '40px',
+//   arrows: false,
+//   dots: true,
+//   infinite: false,
+//   variableWidth: true,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         variableWidth: false,
+//         slidesToShow: 3,
+//         slidesToScroll: 3,
+//         infinite: true,
+//         dots: true
+//       }
+//     }
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ]
+// });
+
+
+
+
+
+
 
 
 // SPORTS
