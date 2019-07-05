@@ -15,6 +15,7 @@ GENERAL
 ***************/
 * {
   box-sizing: border-box;
+  line-height: 1.6;
 }
 
 .main-container {
@@ -23,7 +24,7 @@ GENERAL
 }
 @media (min-width: 1920px) {
   .main-container {
-    width: 90%;
+    width: 75%;
   }
 }
 
@@ -71,6 +72,13 @@ NAVIGATION
   margin-top: 25px;
   margin-right: 25px;
   text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /**************
@@ -152,6 +160,23 @@ SPORTS
 /**************
 CARDS
 ***************/
+@media (max-width: 1024px) {
+  .cards {
+    cursor: pointer;
+  }
+}
+
+.slick-slide {
+  outline: none;
+}
+
+@media (min-width: 1366px) {
+  .cards-desktop {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
 .cards {
   background-color: #564ce9;
   border-radius: 8px;
@@ -226,6 +251,11 @@ CARDS
   }
 }
 
+.traffic_widget_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /**************
 DATA
 ***************/
@@ -235,6 +265,12 @@ DATA
   font-size: 50px;
   text-transform: uppercase;
   margin-top: 148px;
+}
+@media (min-width: 1024px) {
+  .data {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .graph img {
@@ -253,13 +289,12 @@ DATA
 }
 @media (min-width: 1024px) {
   .graph img {
-    width: 100%;
+    width: 60%;
   }
 }
 @media (min-width: 1920px) {
   .graph img {
-    width: 477px;
-    height: 292px;
+    width: 50%;
   }
 }
 .graph p {
@@ -293,13 +328,12 @@ DATA
 @media (min-width: 1024px) {
   .percentage img {
     order: 1;
-    width: 75%;
+    width: 30%;
   }
 }
 @media (min-width: 1920px) {
   .percentage img {
-    width: 470px;
-    height: 470px;
+    width: 25%;
   }
 }
 .percentage p {

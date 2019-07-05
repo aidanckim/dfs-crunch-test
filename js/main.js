@@ -4,6 +4,7 @@ $('.center').slick({
   slidesToScroll: 3,
   infinite: true,
   dots: true,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -15,6 +16,7 @@ $('.center').slick({
         arrows: false,
         dots: true,
         infinite: false,
+        focusOnSelect: true,
         variableWidth: true
       }
     }

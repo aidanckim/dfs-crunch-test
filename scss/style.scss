@@ -24,13 +24,14 @@ GENERAL
 
 * {
   box-sizing: border-box;
+  line-height: 1.6;
 }
 
 .main-container {
   margin: 0 auto;
   text-align: center;
   @media (min-width: 1920px) {
-    width: 90%;
+    width: 75%;
   }
 }
 
@@ -84,6 +85,14 @@ NAVIGATION
   	text-decoration: none;
   }
 }
+
+.nav {
+  @media (min-width: 1024px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 
 /**************
 INTRODUCTION
@@ -166,6 +175,24 @@ CARDS
 ***************/
 
 .cards {
+  @media (max-width: 1024px) {
+    cursor: pointer;
+  }
+}
+
+.slick-slide {
+    outline: none
+}
+
+.cards-desktop {
+  @media (min-width: 1366px) {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+
+.cards {
   background-color: $color-main;
   border-radius: 8px;
   color: white;
@@ -246,6 +273,15 @@ CARDS
 }
 
 
+
+
+//
+
+.traffic_widget_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /**************
 DATA
 ***************/
@@ -258,6 +294,10 @@ DATA
     text-transform: uppercase;
     // added an extra 25px because of dots -25px
     margin-top: 148px;
+  }
+  @media (min-width: 1024px) {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -275,11 +315,10 @@ DATA
       width: 90%;
     }
     @media (min-width: 1024px) {
-      width: 100%;
+      width: 60%;
     }
     @media (min-width: 1920px) {
-      width: 477px;
-      height: 292px;
+      width: 50%;
     }
   }
   p {
@@ -309,11 +348,10 @@ DATA
     }
     @media (min-width: 1024px) {
       order: 1;
-      width: 75%;
+      width: 30%;
     }
     @media (min-width: 1920px) {
-      width: 470px;
-      height: 470px;
+      width: 25%;
     }
   }
   p {
