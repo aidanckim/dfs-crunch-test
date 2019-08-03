@@ -16,13 +16,11 @@ GENERAL
 * {
   box-sizing: border-box;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 .main-container {
   margin: 0 auto;
   text-align: center;
-  width: 100%;
 }
 @media (min-width: 1920px) {
   .main-container {
