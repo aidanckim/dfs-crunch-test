@@ -1,11 +1,14 @@
 
-mobile
-- change cards when clicked on sports icon images
-- spacing and sizing
-- backup fonts
-- image quality
-
-
-
-mobile
-- hover on cards
+- change login img to svg
+- change cart img to svg
+- change desktop logo img to svg
+- baseball icon hovering
+- fill out correct cards
+- button submit
+- line graph chart.js
+- doughnut graph chart.js
+- back up front
+- responsive web design
+- external links
+- sizing
+- dry code
