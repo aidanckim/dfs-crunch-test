@@ -100,8 +100,15 @@
 }
 .slick-initialized .slick-slide
 {
+  overflow: hidden;
     display: block;
 }
+
+/* own code */
+.slick-initialized {
+  overflow: hidden;
+}
+
 .slick-loading .slick-slide
 {
     visibility: hidden;
