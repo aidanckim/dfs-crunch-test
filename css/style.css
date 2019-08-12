@@ -1,12 +1,6 @@
 /**************
 FONTS
 ***************/
-@font-face {
-  font-family: "Bebas Neue", sans-serif;
-  src: url(fonts/BebasNeueRegular.ttf) format("ttf");
-  font-style: normal;
-  font-weight: normal;
-}
 /**************
 COLORS
 ***************/
@@ -26,10 +20,6 @@ GENERAL
   .main-container {
     width: 75%;
   }
-}
-
-ul {
-  list-style-type: none;
 }
 
 /**************
@@ -91,7 +81,7 @@ INTRODUCTION
 }
 .company h1 {
   color: #564ce9;
-  font-family: "Bebas Neue";
+  font-family: "Fjalla One";
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -104,8 +94,8 @@ INTRODUCTION
   margin-top: 38px;
 }
 .catch h1 {
-  font-family: "Bebas Neue";
-  font-size: 50px;
+  font-family: "Fjalla One";
+  font-size: 40px;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
@@ -135,7 +125,7 @@ SPORTS
 }
 .sports h2 {
   color: #564ce9;
-  font-family: "Bebas Neue";
+  font-family: "Fjalla One";
   font-size: 24px;
 }
 .sports a {
@@ -186,7 +176,7 @@ CARDS
   ***************/
 }
 .cards h2 {
-  font-family: "Bebas Neue";
+  font-family: "Fjalla One";
   font-size: 30px;
   font-weight: 300;
   padding-top: 17px;
@@ -198,9 +188,9 @@ CARDS
 .cards p {
   font-family: "Montserrat";
   font-size: 14px;
-  padding-top: 43px;
-  padding-right: 26.5px;
-  padding-left: 26.5px;
+  margin-top: 43px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 .cards img {
   margin: 0 auto;
@@ -209,23 +199,24 @@ CARDS
   padding-top: 19px;
   padding-bottom: 37px;
 }
-.cards ul {
-  padding: 0;
-}
 .cards li {
   font-family: "Montserrat";
   font-size: 12px;
   line-height: 2;
+  text-align: left;
+  margin-left: 12.5px;
+  margin-right: 25px;
 }
 .cards .button {
   background-color: #2b248e;
   border-radius: 8px;
   color: white;
   display: inline-block;
-  font-family: "Bebas Neue";
-  margin-bottom: 25px;
-  padding-right: 85px;
-  padding-left: 85px;
+  font-family: "Fjalla One";
+  margin-top: 25px;
+  margin-bottom: 35px;
+  padding-right: 70px;
+  padding-left: 70px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -261,8 +252,8 @@ DATA
 ***************/
 .data h1 {
   color: #564ce9;
-  font-family: "Bebas Neue";
-  font-size: 50px;
+  font-family: "Fjalla One";
+  font-size: 40px;
   text-transform: uppercase;
   margin-top: 148px;
 }
@@ -299,9 +290,8 @@ DATA
 }
 .graph p {
   font-family: "Montserrat";
-  line-height: 1.5;
   margin: 0 auto;
-  padding-top: 46px;
+  padding-top: 27px;
   text-align: left;
   width: 85%;
 }
@@ -317,7 +307,7 @@ DATA
 }
 
 .percentage img {
-  margin-top: 75px;
+  margin-top: 96px;
   width: 70%;
 }
 @media (min-width: 768px) {
@@ -364,10 +354,15 @@ FOOTER
 }
 .sms h2 {
   color: #909090;
-  font-family: "Bebas Neue";
+  font-family: "Fjalla One";
   font-weight: 300;
   margin-top: 75px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sms h2 {
+    display: none;
+  }
 }
 .sms a {
   text-decoration: none;
@@ -382,10 +377,15 @@ FOOTER
 }
 .disc h2 {
   color: #909090;
-  font-family: "Bebas Neue";
+  font-family: "Fjalla One";
   font-weight: 300;
   margin-top: 75px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .disc h2 {
+    display: none;
+  }
 }
 .disc p {
   color: #909090;
@@ -398,9 +398,14 @@ FOOTER
   padding-left: 30px;
   text-align: left;
 }
+@media (min-width: 768px) {
+  .acc {
+    padding-bottom: 50px;
+  }
+}
 .acc h2 {
   color: #909090;
-  font-family: "Bebas Neue";
+  font-family: "Fjalla One";
   font-weight: 300;
   margin-top: 75px;
   text-transform: uppercase;
@@ -435,6 +440,11 @@ FOOTER
     padding-top: 91px;
     padding-right: 5px;
     max-width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    align-items: center;
   }
 }
 

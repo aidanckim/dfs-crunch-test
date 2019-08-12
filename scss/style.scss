@@ -1,14 +1,8 @@
 /**************
 FONTS
 ***************/
-@font-face {
-  font-family: 'Bebas Neue', sans-serif;
-  src: url(fonts/BebasNeueRegular.ttf) format('ttf');
-  font-style: normal;
-  font-weight: normal;
-}
 
-$font-family-bn: 'Bebas Neue';
+$font-family-fo: 'Fjalla One';
 $font-family-m: 'Montserrat';
 
 /**************
@@ -21,13 +15,6 @@ $color-main: #564ce9;
 /**************
 GENERAL
 ***************/
-
-// .slick-track .slick-slide {
-//   display: flex;
-//   height: auto;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 * {
   box-sizing: border-box;
@@ -43,7 +30,7 @@ GENERAL
 }
 
 ul {
-  list-style-type: none;
+  // list-style-type: none;
 }
 
 /**************
@@ -111,7 +98,7 @@ INTRODUCTION
   }
   h1 {
     color: $color-main;
-    font-family: $font-family-bn;
+    font-family: $font-family-fo;
     font-size: 20px;
     text-transform: uppercase;
   }
@@ -124,8 +111,8 @@ INTRODUCTION
   color: $color-main;
   margin-top: 38px;
   h1 {
-    font-family: $font-family-bn;
-    font-size: 50px;
+    font-family: $font-family-fo;
+    font-size: 40px; // changed original 35px to 40px
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
@@ -152,7 +139,7 @@ SPORTS
   }
   h2 {
     color: $color-main;
-    font-family: $font-family-bn;
+    font-family: $font-family-fo;
     font-size: 24px;
   }
   a {
@@ -188,7 +175,7 @@ CARDS
 }
 
 .slick-slide {
-    outline: none
+  outline: none
 }
 
 .cards-desktop {
@@ -208,7 +195,7 @@ CARDS
   ***************/
   // width: 400px; //manually edited - width: 85%;
   h2 {
-    font-family: $font-family-bn;
+    font-family: $font-family-fo;
     font-size: 30px;
     font-weight: 300;
     padding-top: 17px;
@@ -220,9 +207,9 @@ CARDS
   p {
     font-family: $font-family-m;
     font-size: 14px;
-    padding-top: 43px;
-    padding-right: 26.5px;
-    padding-left: 26.5px;
+    margin-top: 43px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
   img {
     margin: 0 auto;
@@ -231,23 +218,24 @@ CARDS
     padding-top: 19px;
     padding-bottom: 37px;
   }
-  ul {
-    padding: 0;
-  }
   li {
     font-family: $font-family-m;
     font-size: 12px;
     line-height: 2;
+    text-align: left;
+    margin-left: 12.5px;
+    margin-right: 25px;
   }
   .button {
     background-color: #2b248e;
     border-radius: 8px;
     color: white;
     display: inline-block;
-    font-family: $font-family-bn;
-    margin-bottom: 25px;
-    padding-right: 85px;
-    padding-left: 85px;
+    font-family: $font-family-fo;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding-right: 70px;
+    padding-left: 70px;
     text-decoration: none;
     text-transform: uppercase;
     // figure out new button
@@ -296,8 +284,8 @@ DATA
 .data {
   h1 {
     color: $color-main;
-    font-family: $font-family-bn;
-    font-size: 50px;
+    font-family: $font-family-fo;
+    font-size: 40px;
     text-transform: uppercase;
     // added an extra 25px because of dots -25px
     margin-top: 148px;
@@ -330,9 +318,8 @@ DATA
   }
   p {
     font-family: $font-family-m;
-    line-height: 1.5;
     margin: 0 auto;
-    padding-top: 46px;
+    padding-top: 27px;
     text-align: left;
     width: 85%;
     @media (min-width: 768px) {
@@ -346,7 +333,7 @@ DATA
 
 .percentage {
   img {
-    margin-top: 75px;
+    margin-top: 96px;
     width: 70%;
     @media (min-width: 768px) {
       // width: 384px;
@@ -386,10 +373,13 @@ FOOTER
   text-align: left;
   h2 {
     color: #909090;
-    font-family: $font-family-bn;
+    font-family: $font-family-fo;
     font-weight: 300;
     margin-top: 75px;
     text-transform: uppercase;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: none;
+    }
   }
   a {
     text-decoration: none;
@@ -404,10 +394,13 @@ FOOTER
   text-align: left;
   h2 {
     color: #909090;
-    font-family: $font-family-bn;
+    font-family: $font-family-fo;
     font-weight: 300;
     margin-top: 75px;
     text-transform: uppercase;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: none;
+    }
   }
   p {
     color: #909090;
@@ -420,9 +413,12 @@ FOOTER
 .acc {
   padding-left: 30px;
   text-align: left;
+  @media (min-width: 768px) {
+    padding-bottom: 50px;
+  }
   h2 {
     color: #909090;
-    font-family: $font-family-bn;
+    font-family: $font-family-fo;
     font-weight: 300;
     margin-top: 75px;
     text-transform: uppercase;
@@ -460,6 +456,9 @@ FOOTER
     padding-top: 91px;
     padding-right: 5px;
     max-width: 90%;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    align-items: center;
   }
 }
 
