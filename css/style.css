@@ -367,6 +367,9 @@ FOOTER
 .sms a {
   text-decoration: none;
 }
+.sms img {
+  border-radius: 50%;
+}
 .sms .discord {
   margin-left: 5px;
 }
