@@ -21,6 +21,7 @@ GENERAL
   line-height: 1.6;
 }
 
+
 .main-container {
   margin: 0 auto;
   text-align: center;
@@ -48,6 +49,10 @@ SLICK STYLES
 
 .slick-dots {
   bottom: -50px;
+}
+
+.slick-viewport {
+ overflow-x: hidden !important;
 }
 
 

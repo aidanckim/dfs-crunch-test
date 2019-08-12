@@ -38,6 +38,10 @@ SLICK STYLES
   bottom: -50px;
 }
 
+.slick-viewport {
+  overflow-x: hidden !important;
+}
+
 /**************
 NAVIGATION
 ***************/
