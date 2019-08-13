@@ -7,18 +7,19 @@ COLORS
 /**************
 GENERAL
 ***************/
-html, body {
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+  -webkit-overflow-scrolling: touch;
+}
+
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-  line-height: 1.6;
-  -webkit-overflow-scrolling: touch;
 }
 
 .main-container {
@@ -160,12 +161,6 @@ SPORTS
 /**************
 CARDS
 ***************/
-@media (max-width: 1024px) {
-  .cards {
-    cursor: pointer;
-  }
-}
-
 .slick-slide {
   outline: none;
 }
@@ -181,9 +176,26 @@ CARDS
   background-color: #564ce9;
   border-radius: 8px;
   color: white;
+  max-width: 350px;
+  margin-left: 25px;
+  margin-right: 25px;
+  cursor: pointer;
   /**************
   REVIEW code below
   ***************/
+}
+@media (min-width: 768px) {
+  .cards {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    cursor: default;
+    max-width: 325px;
+    margin: 0 auto;
+  }
 }
 .cards h2 {
   font-family: "Fjalla One";
@@ -199,8 +211,6 @@ CARDS
   font-family: "Montserrat";
   font-size: 14px;
   margin-top: 43px;
-  margin-right: 50px;
-  margin-left: 50px;
 }
 .cards img {
   margin: 0 auto;
@@ -234,29 +244,6 @@ CARDS
   font-size: 21px;
 }
 
-.cards {
-  max-width: 350px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-@media (min-width: 768px) {
-  .cards {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
-@media (min-width: 1024px) {
-  .cards {
-    max-width: 325px;
-    margin: 0 auto;
-  }
-}
-
-.traffic_widget_container {
-  width: 90%;
-  margin: 0 auto;
-}
-
 /**************
 DATA
 ***************/
@@ -278,14 +265,9 @@ DATA
   margin-top: 31px;
   width: 100%;
 }
-@media (max-width: 1024px) {
-  .graph img {
-    padding-left: 42px;
-  }
-}
 @media (min-width: 768px) {
   .graph img {
-    width: 90%;
+    width: 80%;
   }
 }
 @media (min-width: 1024px) {
@@ -322,18 +304,17 @@ DATA
 }
 @media (min-width: 768px) {
   .percentage img {
-    width: 50%;
+    width: 45%;
   }
 }
 @media (min-width: 1024px) {
   .percentage img {
-    order: 1;
-    width: 30%;
+    width: 25%;
   }
 }
 @media (min-width: 1920px) {
   .percentage img {
-    width: 25%;
+    width: 15%;
   }
 }
 .percentage p {
@@ -458,34 +439,18 @@ FOOTER
 MEDIA QUERIES
 ***************/
 @media (min-width: 1024px) {
-  .flex {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1024px;
-  }
-
   .flex-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
-  .flex-container > div {
-    width: 50%;
-    padding: 10px;
+  .flex-container img {
+    flex: 1;
   }
 
-  .flexbox-container > div:first-child {
-    margin-right: 20px;
-  }
-
-  .graph p {
-    margin-left: 30px;
-  }
-
-  .percentage p {
-    margin-right: 37px;
+  .flex-container p {
+    flex: 1;
   }
 }
 

@@ -11,19 +11,9 @@ COLORS
 
 $color-main: #564ce9;
 
-
 /**************
 GENERAL
 ***************/
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
 
 * {
   box-sizing: border-box;
@@ -31,6 +21,14 @@ html,body
   -webkit-overflow-scrolling: touch;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 
 .main-container {
   margin: 0 auto;
@@ -38,10 +36,6 @@ html,body
   @media (min-width: 1920px) {
     width: 75%;
   }
-}
-
-ul {
-  // list-style-type: none;
 }
 
 /**************
@@ -60,7 +54,6 @@ SLICK STYLES
 .slick-dots {
   bottom: -50px;
 }
-
 
 /**************
 NAVIGATION
@@ -97,7 +90,6 @@ NAVIGATION
     margin: 0 auto;
   }
 }
-
 
 /**************
 INTRODUCTION
@@ -180,12 +172,6 @@ SPORTS
 CARDS
 ***************/
 
-.cards {
-  @media (max-width: 1024px) {
-    cursor: pointer;
-  }
-}
-
 .slick-slide {
   outline: none
 }
@@ -197,11 +183,23 @@ CARDS
   }
 }
 
-
 .cards {
   background-color: $color-main;
   border-radius: 8px;
   color: white;
+  max-width: 350px;
+  margin-left: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (min-width: 1024px) {
+    cursor: default;
+    max-width: 325px;
+    margin: 0 auto;
+  }
   /**************
   REVIEW code below
   ***************/
@@ -220,8 +218,6 @@ CARDS
     font-family: $font-family-m;
     font-size: 14px;
     margin-top: 43px;
-    margin-right: 50px;
-    margin-left: 50px;
   }
   img {
     margin: 0 auto;
@@ -265,29 +261,16 @@ CARDS
 }
 
 
-.cards {
-  max-width: 350px;
-  margin-left: 10px;
-  margin-right: 10px;
-  @media (min-width: 768px) {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  @media (min-width: 1024px) {
-    max-width: 325px;
-    margin: 0 auto;
-  }
-}
 
 
 
 
-//
 
-.traffic_widget_container {
-  width: 90%;
-  margin: 0 auto;
-}
+
+// .traffic_widget_container {
+//   width: 90%;
+//   margin: 0 auto;
+// }
 
 /**************
 DATA
@@ -314,12 +297,12 @@ DATA
     // padding-left: 42px;
     width: 100%;
     @media (max-width: 1024px) {
-      padding-left: 42px;
+      // padding-left: 42px;
     }
     @media (min-width: 768px) {
       // width: 550px;
       // height: 350px;
-      width: 90%;
+      width: 80%;
     }
     @media (min-width: 1024px) {
       width: 60%;
@@ -350,14 +333,13 @@ DATA
     @media (min-width: 768px) {
       // width: 384px;
       // height: 384px;
-      width: 50%;
+      width: 45%;
     }
     @media (min-width: 1024px) {
-      order: 1;
-      width: 30%;
+      width: 25%;
     }
     @media (min-width: 1920px) {
-      width: 25%;
+      width: 15%;
     }
   }
   p {
@@ -375,6 +357,10 @@ DATA
     }
   }
 }
+
+
+
+
 
 /**************
 FOOTER
@@ -488,34 +474,52 @@ MEDIA QUERIES
 }
 
 @media (min-width: 1024px) {
-  .flex {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1024px;
-}
-// .cards {
-//   padding: 10px;
-//   margin: 10px;
-//   text-align: center;
+//   .flex {
+//   display: flex;
+//   align-items: center;
+//   margin: 0 auto;
+//   width: 90%;
+//   max-width: 1024px;
 // }
+// // .cards {
+// //   padding: 10px;
+// //   margin: 10px;
+// //   text-align: center;
+// // }
+// .flex-container {
+//   display: flex;
+//   align-items: center;
+// }
+// .flex-container > div {
+//   width: 50%;
+//   padding: 10px;
+// }
+// .flexbox-container > div:first-child {
+//   margin-right: 20px;
+// }
+//
+// .graph p {
+//   margin-left: 30px;
+// }
+// .percentage p {
+//   margin-left: 130px;
+// }
+
+
 .flex-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
-.flex-container > div {
-  width: 50%;
-  padding: 10px;
-}
-.flexbox-container > div:first-child {
-  margin-right: 20px;
+
+.flex-container img {
+  flex: 1;
 }
 
-.graph p {
-  margin-left: 30px;
+.flex-container p {
+  flex: 1;
 }
-.percentage p {
-  margin-right: 37px;
-}
+
+
+
 }
