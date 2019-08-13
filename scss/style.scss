@@ -378,9 +378,6 @@ FOOTER
     font-weight: 300;
     margin-top: 75px;
     text-transform: uppercase;
-    @media (min-width: 768px) and (max-width: 1024px) {
-      display: none;
-    }
   }
   a {
     text-decoration: none;
@@ -402,9 +399,6 @@ FOOTER
     font-weight: 300;
     margin-top: 75px;
     text-transform: uppercase;
-    @media (min-width: 768px) and (max-width: 1024px) {
-      display: none;
-    }
   }
   p {
     color: #909090;
@@ -460,9 +454,6 @@ FOOTER
     padding-top: 91px;
     padding-right: 5px;
     max-width: 90%;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    align-items: center;
   }
 }
 

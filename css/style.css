@@ -7,6 +7,17 @@ COLORS
 /**************
 GENERAL
 ***************/
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
 * {
   box-sizing: border-box;
   line-height: 1.6;
@@ -359,11 +370,6 @@ FOOTER
   margin-top: 75px;
   text-transform: uppercase;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .sms h2 {
-    display: none;
-  }
-}
 .sms a {
   text-decoration: none;
 }
@@ -384,11 +390,6 @@ FOOTER
   font-weight: 300;
   margin-top: 75px;
   text-transform: uppercase;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .disc h2 {
-    display: none;
-  }
 }
 .disc p {
   color: #909090;
@@ -443,11 +444,6 @@ FOOTER
     padding-top: 91px;
     padding-right: 5px;
     max-width: 90%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .footer {
-    align-items: center;
   }
 }
 
