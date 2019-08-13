@@ -247,8 +247,8 @@ CARDS
   }
 
   ul li:before {
-    content: '\2714';
-    color: #fff;
+    content: '\2714 \fe0e';
+    color: red;
     font-family: 'Zapf Dingbats'
   }
   .button {

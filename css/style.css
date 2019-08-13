@@ -240,8 +240,8 @@ CARDS
   list-style-type: none;
 }
 .cards ul li:before {
-  content: "✔";
-  color: #fff;
+  content: "✔︎";
+  color: red;
   font-family: "Zapf Dingbats";
 }
 .cards .button {
