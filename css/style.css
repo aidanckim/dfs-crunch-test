@@ -241,7 +241,7 @@ CARDS
 }
 .cards ul li:before {
   content: "✔";
-  color: white;
+  color: #fff;
 }
 .cards .button {
   background-color: #2b248e;
