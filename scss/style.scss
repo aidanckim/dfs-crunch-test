@@ -187,9 +187,9 @@ CARDS
   background-color: $color-main;
   border-radius: 8px;
   color: white;
-  max-width: 350px;
-  margin-left: 25px;
-  margin-right: 25px;
+  max-width: 300px;
+  margin-left: 12.5px;
+  margin-right: 12.5px;
   cursor: pointer;
   @media (min-width: 768px) {
     margin-left: 50px;
@@ -242,8 +242,8 @@ CARDS
     font-family: $font-family-fo;
     margin-top: 25px;
     margin-bottom: 35px;
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
     text-decoration: none;
     text-transform: uppercase;
     // figure out new button
