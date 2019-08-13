@@ -241,7 +241,7 @@ CARDS
 }
 .cards ul li:before {
   content: "✔︎";
-  color: red;
+  color: white;
   font-family: "Zapf Dingbats";
 }
 .cards .button {
