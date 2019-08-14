@@ -74,6 +74,7 @@ NAVIGATION
 .nav-flex {
   display: flex;
   list-style-type: none;
+  align-items: center;
   li:first-child {
     margin-right: auto;
   }

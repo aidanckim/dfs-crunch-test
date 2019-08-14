@@ -59,6 +59,7 @@ NAVIGATION
 .nav-flex {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 .nav-flex li:first-child {
   margin-right: auto;
