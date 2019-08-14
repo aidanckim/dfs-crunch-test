@@ -278,6 +278,11 @@ DATA
   margin-top: 31px;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .graph img {
+    padding-left: 42px;
+  }
+}
 @media (min-width: 768px) {
   .graph img {
     width: 80%;
