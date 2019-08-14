@@ -56,12 +56,6 @@ SLICK STYLES
 /**************
 NAVIGATION
 ***************/
-@media (max-width: 1024px) {
-  .desktop {
-    visibility: hidden;
-  }
-}
-
 .nav-flex {
   display: flex;
   list-style-type: none;
@@ -106,11 +100,12 @@ INTRODUCTION
 
 .catch {
   color: #564ce9;
-  margin-top: 38px;
+  margin-top: 100px;
+  margin-bottom: 25px;
 }
 .catch h1 {
   font-family: "Fjalla One";
-  font-size: 40px;
+  font-size: 35px;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
