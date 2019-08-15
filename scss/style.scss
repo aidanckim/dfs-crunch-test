@@ -91,8 +91,7 @@ GENERAL
   box-sizing: border-box;
   line-height: 1.6;
   -webkit-overflow-scrolling: touch;
-  -webkit-scroll-behavior: smooth;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;;
 
 }
 
@@ -227,7 +226,6 @@ SPORTS
   margin: 0 auto;
   @media (min-width: 1024px) {
     margin-top: 80px;
-    margin-bottom: 80px;
   }
   h2 {
     color: $color-main;
@@ -283,10 +281,11 @@ CARDS
     margin-left: 50px;
     margin-right: 50px;
     max-width: 325px;
+    margin-top: 50px;
   }
   @media (min-width: 1024px) {
     cursor: default;
-    margin: 0 auto;
+    margin-top: 80px;
   }
   /**************
   REVIEW code below
