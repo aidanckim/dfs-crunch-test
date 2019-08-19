@@ -156,7 +156,7 @@ INTRODUCTION
 }
 .company h1 {
   color: #564ce9;
-  font-family: "Fjalla One", "sans-serif";
+  font-family: bebas-neue, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -170,7 +170,7 @@ INTRODUCTION
   margin-bottom: 25px;
 }
 .catch h1 {
-  font-family: "Fjalla One", "sans-serif";
+  font-family: bebas-neue, sans-serif;
   font-size: 30px;
   margin: 0 auto;
   text-align: center;

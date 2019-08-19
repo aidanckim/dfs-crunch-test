@@ -92,7 +92,6 @@ GENERAL
   line-height: 1.6;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth !important;;
-
 }
 
 ul, li {
@@ -186,7 +185,7 @@ INTRODUCTION
   }
   h1 {
     color: $color-main;
-    font-family: $font-family-fo;
+    font-family: bebas-neue, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
   }
@@ -200,7 +199,7 @@ INTRODUCTION
   margin-top: 100px; // 38px to 75px
   margin-bottom: 25px;
   h1 {
-    font-family: $font-family-fo;
+    font-family: bebas-neue, sans-serif;
     font-size: 30px;
     margin: 0 auto;
     text-align: center;
